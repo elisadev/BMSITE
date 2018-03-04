@@ -1,0 +1,69 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient( 
+        to right bottom, 
+        rgba($color-primary, 0.6), 
+        rgba($color-primary-light, 0.8)), 
+        url(../img/BM/BM_Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
+    
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(10%);
+    }
+}
+
+
+/*** MEDIA QUERIE ***/
+
+@media (min-width: 450px) and (max-width: 750px) { 
+    .header {
+         &__text-box {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+        }
+    }
+        
+    .heading-primary--main {
+            font-size: 28px;
+    }
+    
+     .heading-primary--sub {
+            font-size: 18px;
+    } 
+}
+
+
+@media (max-width: 449px) {
+    .header {
+         &__text-box {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+    }
+        
+    .heading-primary--main {
+            font-size: 22px;
+    }
+    
+     .heading-primary--sub {
+            font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

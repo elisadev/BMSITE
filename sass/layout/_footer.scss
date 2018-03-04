@@ -1,0 +1,77 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color-violet;
+    color: $color-white;
+    height: 20rem;
+    margin-top: 35px;
+    
+    &__navigation {
+        display: inline-block;
+        padding-top: 2rem;
+    }
+    
+    &__list {
+        list-style: none;
+    }
+    
+    &__item {
+		display: inline-block;
+		
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+    }
+    
+    &__link {
+		&:link,
+		&:visited {
+			color: $color-white;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			transition: all .2s;
+		}
+		
+		&:hover, 
+		&:active {
+			color: $color-white;
+			box-shadow:  0 1rem 2rem rgba($color-white, .4);
+			transform: scale(1.14);
+		}
+	}
+}
+
+
+
+/*** MEDIA QUERIE ***/
+
+@media (max-width: 530px) {
+    
+    .footer {
+         font-size: 12px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

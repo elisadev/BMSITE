@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bruno Mars Website</title>
+</head>
+<body>
+  
+  <div class="navigation">
+       		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+       		<label for="navi-toggle" class="navigation__button">
+       		    <span class="navigation__icon">&nbsp;</span>
+       		</label>
+       		<div class="navigation__background">&nbsp;</div>
+       		<nav class="navigation__nav">
+       			<ul class="navigation__list">
+       				<li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>HOME</a></li>
+       				<li class="navigation__item"><a href="images.html" class="navigation__link"><span>02</span>GALLERY</a></li>
+       				<li class="navigation__item"><a href="albums.html" class="navigation__link"><span>03</span>ALBUMS</a></li>
+       				<li class="navigation__item"><a href="#contactUs.html" class="navigation__link"><span>04</span>CONTACT US</a></li>
+       			</ul>
+       		</nav>
+    </div>
+  
+  <div class="page-title">Contact Us</div>
+  
+  <section class="section-contact">
+            	<div class="row">
+            		<div class="contact">
+            			<div class="contact__form">
+            				<form action="" class="form" id="formi">
+            				
+            					<div class="form__group">
+            						<input type="text" class="form__input" placeholder="Full name" id="name" required>
+            						<label for="name" class="form__label">Full name</label>
+            					</div>
+            					
+            					<div class="form__group">
+            						<input type="email" class="form__input" placeholder="email address" id="email" required>
+            						<label for="email" class="form__label">email address</label>
+            					</div>
+            					
+            	                <div class="form__group">
+            	                    <input type="message" class="form__input" placeholder="your message" id="message" required>
+            	                    <label for="message" class="form__message"></label>
+            	                </div>
+            					
+            					<div class="form__group">
+            				        <button class="btn btn--pink" id="sendMail" onsubmit="sendingMail()">send &rarr;</button>
+            				    </div>
+            				</form>
+            			</div>
+            		</div>
+            	</div>
+    </section>
+
+
+   
+    <footer class="footer">
+        	<div class="row">
+        		<div class="footer-left">
+        			<div class="footer__navigation">
+        				<ul class="footer__list">
+        					<li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
+        					<li class="footer__item"><a href="images.html" class="footer__link">Gallery</a></li>
+        					<li class="footer__item"><a href="albums.html" class="footer__link">Ablums</a></li>
+        					<li class="footer__item"><a href="contactUs.html" class="footer__link">Contact Us</a></li>
+        					<li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+        				</ul>
+        			</div>
+        		</div>
+        		<div class="footer-right">
+        			<p class="footer__copyright">
+						Built by <a href="https://elisadev.github.io/" class="footer__link">* Elisa Creative *</a>
+        			</p>
+				</div>
+        	</div>
+    </footer>
+    
+  <script src="js/script.js"></script>
+    
+</body>
+</html>
