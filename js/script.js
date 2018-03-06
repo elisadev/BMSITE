@@ -15,6 +15,13 @@ function toggle2(showHideDiv, switchTextDiv) {
 	}
 }
 
+/*** Completion message button send  ***/
+
+document.getElementById("formi").addEventListener("submit", sendingMail);
+
+function sendingMail() {
+    alert('Your message has been sent successfully!');
+}
 
 
 
